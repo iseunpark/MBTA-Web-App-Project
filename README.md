@@ -29,6 +29,5 @@ Through this project, I learned how to work with multiple APIs at once within a 
 
 **Style Assistance**  
 ![Style Assistance](./Capture3.PNG)
-I couldn't identify why I cannot connect these 
 ---
 Formatting assisted by ChatGPT
