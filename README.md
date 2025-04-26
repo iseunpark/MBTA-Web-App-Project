@@ -22,13 +22,13 @@ Through this project, I learned how to work with multiple APIs at once within a 
 
 ## Screenshots
 **Error Message**  
-![Error Message](/screenshots/Capture.png)
+![Error Message](/screenshots/Capture.PNG)
 
 **Debug Output**  
-![Debug Output](/screenshots/Capture2.png)
+![Debug Output](/screenshots/Capture2.PNG)
 
 **Style Assistance**  
-![Style Assistance](/screenshots/Capture3.png)
+![Style Assistance](/screenshots/Capture3.PNG)
 
 ---
 Formatting assisted by ChatGPT
