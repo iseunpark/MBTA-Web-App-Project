@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nearest MBTA Station</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <h1>Nearest MBTA Station Found!</h1>
+
+  <p>We found a station near <strong>{{ place_name }}</strong>!</p>
+
+  <p><strong>Station Name:</strong> <strong>{{ stop_name }}</strong></p>
+  <p><strong>Wheelchair Accessible:</strong> {{ wheelchair_accessible }}</p>
+
+  <br>
+  <a href="/">Search Again</a>
+</body>
+</html>

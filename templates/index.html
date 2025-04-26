@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hi</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Nearest MBTA Station & Tourist Chatbot</title>
 
-  <body>
-    <h1>Hi</h1>
-    <p>This is an amazing app to help you find the nearest MBTA station</p>
-  </body>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <h1>Welcome to the MBTA Finder!</h1>
+
+  <p>Enter a location to find the nearest MBTA station:</p>
+
+  <form action="/nearest_mbta" method="POST">
+    <input type="text" id="place_name" name="place_name" placeholder="e.g., Boston Common" required><br><br>
+    <button type="submit">Find Station</button>
+  </form>
+
+  <hr>
+
+  <h2>Ask Our Boston Tourist Chatbot!</h2>
+  <form action="/chat" method="POST">
+    <input type="text" name="user_question" placeholder="e.g., Best seafood in Boston?" required><br><br>
+    <button type="submit">Ask the Chatbot</button>
+  </form>
+
+  {% if chatbot_answer %}
+    <hr>
+    <h2>Chatbot Response</h2>
+    <p><strong>Your Question:</strong> {{ chatbot_question }}</p>
+    <p><strong>Answer:</strong> {{ chatbot_answer }}</p>
+  {% endif %}
+
+</body>
 </html>
